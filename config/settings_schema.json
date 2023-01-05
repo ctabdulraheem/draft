@@ -8,6 +8,15 @@
     "theme_support_url": "https://support.shopify.com/"
   },
   {
+    "name": "Best Product",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Add your Products"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.colors.name",
     "settings": [
       {
