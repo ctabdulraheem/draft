@@ -1,2 +1,3 @@
 # Myecartstore
-## Shopify theme development practice
+## Shopify Theme Development Practice
+
