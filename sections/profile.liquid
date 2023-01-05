@@ -1,11 +1,24 @@
 {% schema %}
   {
     "name": "Profile",
-
+    "settings": [
+      {
+        "type": "header",
+        "id": "profile_header",
+        "label": "Profile Header Setting"
+      }, {
+        "type": "text",
+        "id": "profile_name",
+        "label": "Porfile Name"
+      }, {
+        "type": "image_picker",
+        "id": "profile_image",
+        "label": "Profile Image"
+      }
+    ],
     "presets": [
       {
         "name": "User Profile"
-
       }
     ]
   }
