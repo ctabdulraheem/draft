@@ -13,6 +13,11 @@
       {
         "type": "header",
         "content": "Add your Products"
+      },
+      {
+        "type": "text",
+        "id": "products_names",
+        "label": "Add Products Name"
       }
     ]
   },

@@ -392,7 +392,11 @@
         </h1>
       {%- endif -%}
     {%- endif -%}
+{% comment %} Best Product {% endcomment %}
+<div class="best_products">
+  <h3>{{ settings.products_names }}</h3>
 
+</div>
     {%- if section.settings.menu != blank -%}
       {%- if section.settings.menu_type_desktop == 'dropdown' -%}
         <nav class="header__inline-menu">
