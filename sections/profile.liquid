@@ -1,3 +1,16 @@
+<div id="my-user_profile">
+  <div class="user_profile-image">
+    <img
+      src=" {{ section.settings.user_image | asset_img_url: '300x300x' }} "
+      alt=""
+      loading="lazy" />
+  </div>
+  <h3>
+    {{ section.settings.user_name }}</h3>
+  <p>
+    {{ section.settings.user_bio }}</p>
+</div>
+
 {% schema %}
   {
     "name": "Profile",
