@@ -23,10 +23,6 @@ nav #brand_logo {
     margin-right: 45px;
     margin-top: 3px;
 }
-nav #brand_logo img {
-    width: 114px;
-    height: 13px;
-}
 /* Header Links */
 nav .header_nav--links {
     list-style: none;
