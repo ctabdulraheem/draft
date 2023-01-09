@@ -2,4 +2,93 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+nav {
+    margin: 40px 0px;
+}
+nav::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+nav #brand_logo {
+    float: left;
+    margin-right: 45px;
+    margin-top: 3px;
+}
+nav #brand_logo img {
+    width: 114px;
+    height: 13px;
+}
+/* Header Links */
+nav .header_nav--links {
+    list-style: none;
+    float: left;
+}
+nav .header_nav--links li {
+    display: inline-block;
+    padding-right: 20px;
+}
+nav .header_nav--links li a {
+    font-size: 16px;
+    font-weight: 900;
+    color: #34251F;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+/* Search Icon */
+nav .header_search--bar {
+    float: left;
+}
+nav .header_search--bar svg.icon-search {
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    margin-right: 12px;
+}
+nav .header_search--bar form {
+    float: right;
+}
+nav .header_search--bar .nav_search-input {
+    font-size: 16px;
+    color: #979797;
+    border: none;
+    outline: none;
+}
+
+/* Header User cart and login btn */
+nav .nav-users {
+    float: right;
+}
+nav .nav-users li {
+    list-style: none;
+    float: left;
+    margin-right: 20px;
+}
+nav .nav-users li a .icon-cart {
+    width: 27px;
+    height: 30px;
+    margin-top: 5px;
+    margin-right: 20px;
+}
+nav .nav-users li a {
+    text-decoration: none;
+}
+nav .nav-users .nav-user-login {
+    border: 1px solid #34251F;
+}
+nav .nav-users .nav-user-login a {
+    color: #34251F;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 20px;
+    display: inline-block;
 }

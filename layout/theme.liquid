@@ -16,7 +16,11 @@
 
   <body>
     <main>
-      {{ content_for_layout }}
+      <div class="container">
+        {{ content_for_layout }}
+        {% section 'header' %}
+      </div>
+
     </main>
 
     <script src="{{'base.js' | asset_url}}" defer="defer"></script>
