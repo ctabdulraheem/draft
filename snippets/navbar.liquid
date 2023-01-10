@@ -7,13 +7,12 @@
     <h1 class="logo">
       <a href="/">{{ section.settings.logo_text }}</a>
     </h1>
-  {% else %}
+  {% endif %}
+  {% if section.settings.select_logo != 'blank' %}
     <div class="logo-image">
       <a href="{{link.links}}"><img src="{{section.settings.select_logo | img_url: 'medium'}}" width="{{section.settings.logo_max_width}}px"></a>
     </div>
   {% endif %}
-
-
   <ul>
     <li><a href="#">Home</a></li>
     <li><a href="#">About</a></li>
