@@ -7,22 +7,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="{{ settings.color_accent }}">
     <link rel="canonical" href="{{ canonical_url }}">
-    <link
-      rel="stylesheet"
-      href="{{'base.css' | asset_url}}"
-      type="text/css" />
     {{ content_for_header }}
   </head>
 
   <body>
     <main>
-      <div class="container">
-        {{ content_for_layout }}
-        {% section 'header' %}
-      </div>
-
+      {{ content_for_layout }}
     </main>
-
-    <script src="{{'base.js' | asset_url}}" defer="defer"></script>
   </body>
 </html>
