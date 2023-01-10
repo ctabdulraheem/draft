@@ -10,18 +10,11 @@
   </div>
   <!-- Navigation Links -->
   <ul class="header_nav--links">
-    <li>
-      <a href="">Home</a>
-    </li>
-    <li>
-      <a href="">Shop</a>
-    </li>
-    <li>
-      <a href="">Most Popular</a>
-    </li>
-    <li>
-      <a href="">Deals</a>
-    </li>
+    {% for link in linklist[section.settings.navigation_menu].links %}
+      <li>
+        <a href="{{ link.url }}">{{ link.title }}</a>
+      </li>
+    {% endfor %}
   </ul>
   <!-- Search -->
   <div class="header_search--bar">
