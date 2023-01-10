@@ -1,0 +1,63 @@
+<section data-section-id="{{section.id}}" data-section-type="header">
+  {% include 'navbar' %}
+</section>
+
+
+{% schema %}
+  {
+    "name": "Header",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Image Logo"
+      },
+      {
+        "type": "image_picker",
+        "id": "select_logo",
+        "label": "Select Logo"
+      },
+      {
+        "type": "range",
+        "id": "logo_max_width",
+        "label": "Logo Width",
+        "max": 200,
+        "min": 20,
+        "unit": "px",
+        "default": "84"
+      },
+      {
+        "type": "checkbox",
+        "id": "hide_image-logo",
+        "label": "Show/Hide Image logo",
+        "default": "true"
+      }, {
+        "type": "header",
+        "content": "Text Logo"
+      }, {
+        "type": "text",
+        "id": "logo_text",
+        "label": "Ente your logo name"
+      }, {
+        "type": "range",
+        "id": "logo_text_size",
+        "label": "Logo font size",
+        "max": 100,
+        "min": 1,
+        "unit": "px",
+        "default": "35"
+      }, {
+        "type": "checkbox",
+        "id": "show_text_logo",
+        "label": "Show/Hide Text Logo",
+        "default": "true"
+      }, {
+        "type": "header",
+        "content": "Select Menu"
+      }, {
+        "type": "link_list",
+        "id": "header_nav_menu",
+        "label": "Select Navigation menu"
+      }
+    ]
+  }
+{% endschema %}
