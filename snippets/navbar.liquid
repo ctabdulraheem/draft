@@ -1,0 +1,19 @@
+<nav>
+  <input type="checkbox" id="check">
+  <label for="check" class="checkbtn">
+    {% render 'icon-menu' %}
+  </label>
+  <h1 class="logo">
+    <a href="/">{{ section.settings.logo_text }}</a>
+  </h1>
+  <div class="logo-image">
+    <a href="/"><img src="{{section.settings.select_logo | img_url: 'medium'}}" width="{{section.settings.logo_max_width}}px"></a>
+  </div>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Feedback</a></li>
+  </ul>
+</nav>
