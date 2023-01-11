@@ -15,7 +15,7 @@
     </h1>
   {% endif %}
   <ul>
-    {% for link in linklists[section.settings.header_nav_menu].link %}
+    {% for link in linklists[section.settings.header_nav_menu].links %}
       <li>
         <a href="{{link.url}}">{{ link.title }}</a>
       </li>
