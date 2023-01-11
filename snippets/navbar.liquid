@@ -6,7 +6,7 @@
   {% if section.settings.logo_text != 'blank' %}
     
   {% endif %}
-  {% if image != 'blank' %}
+  {% if image != blank %}
     <div class="logo-image">
       <a href="/">
           <img src="{{section.settings.select_logo | img_url: 'medium'}}" width="{{section.settings.logo_max_width}}px">  
