@@ -3,19 +3,17 @@
   <label for="check" class="checkbtn">
     {% render 'icon-menu' %}
   </label>
-  {% if section.settings.logo_text != 'blank' %}
-    
+  {% if section.settings.logo_text != blank %}
+    <h1 class="logo">
+      <a href="/">{{ section.settings.logo_text }}</a>
+    </h1>
   {% endif %}
   {% if image != blank %}
     <div class="logo-image">
       <a href="/">
           <img src="{{section.settings.select_logo | img_url: 'medium'}}" width="{{section.settings.logo_max_width}}px">  
       </a>
-    </div>
-    {% else %}
-    <h1 class="logo">
-      <a href="/">{{ section.settings.logo_text }}</a>
-    </h1>
+    </div>    
   {% endif %}
   <ul>
     <li><a href="#">Home</a></li>
