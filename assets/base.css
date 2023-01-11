@@ -18,14 +18,12 @@
   }
   nav h1.logo a {
     color: #0f161e;
-    font-size: 35px;
     font-weight: 300;
     text-decoration: none;
   }
   nav .logo-image {
     padding-top: 15px;
   }
- 
   nav ul {
     float: right;
     margin-right: 20px;
