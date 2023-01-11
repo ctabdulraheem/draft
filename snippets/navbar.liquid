@@ -3,10 +3,9 @@
   <label for="check" class="checkbtn">
     {% render 'icon-menu' %}
   </label>
-
   {% if section.settings.select_logo != blank %}
     <div class="logo-image">
-      <a href="/">
+      <a href="{{ routes.root_url }}">
           <img src="{{section.settings.select_logo | img_url: 'medium'}}" width="{{section.settings.logo_max_width}}px">  
       </a>
     </div>
