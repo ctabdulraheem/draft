@@ -4,10 +4,11 @@
       "header": {
         "type": "header",
         "settings": {
-          "logo_max_width": 132,
+          "select_logo": "shopify:\/\/shop_images\/logo.png",
+          "logo_max_width": 200,
           "hide_image-logo": false,
           "logo_text": "DevX",
-          "logo_text_size": 35,
+          "logo_text_size": 100,
           "show_text_logo": false,
           "header_nav_menu": ""
         }
