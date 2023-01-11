@@ -10,12 +10,10 @@
   {% else %}
     <span></span>
   {% endif %}
-  {% if section.settings.select_logo != 'blank' %}
+  {% if image != blank %}
     <div class="logo-image">
-      <a href="{{link.links}}">
-        {% if section.settings.select_logo != 'blank' %}
-          <img src="{{section.settings.select_logo | img_url: 'medium'}}" width="{{section.settings.logo_max_width}}px">
-        {% endif %}
+      <a href="/">
+          <img src="{{section.settings.select_logo | img_url: 'medium'}}" width="{{section.settings.logo_max_width}}px">  
       </a>
     </div>
   {% else %}
