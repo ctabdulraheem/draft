@@ -19,9 +19,11 @@
       <li>
         <a href="{{link.url}}">{{ link.title }}</a>
         {% for childlink in link.links %}
-          <a href="{{childlink.url}}">
-            {{ childlink.title }}
-          </a>
+          <div class="dropdown">
+            <a href="{{childlink.url}}">
+              {{ childlink.title }}
+            </a>
+          </div>
         {% endfor %}
       </li>
     {% endfor %}
